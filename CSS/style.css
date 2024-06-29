@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  padding: 20px 50px;
+  background-color: rgb(197, 83, 83);
+  max-width: 870px;
+  position:absolute;
+  
+  
+  
+
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  height:50px;
+  margin-bottom: 15px;
+  padding: 10px;
+  
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  height:150px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:auto 1fr;
+  grid-template-areas: 
+  "navigation navigation1 navigation2 navigation3 ";
+  gap:10px;
+ 
+ 
+}
+
+.navigation{
+grid-area: navigation;
+  background-color: #ccc;
+  padding:10px;
+}
+.navigation1{
+ background-color: #ccc;
+}
+.navigation2{
+  grid-area: navigation2;
+  background-color: #ccc;
+}
+.navigation3{
+  grid-area: navigation3;
+  background-color: #ccc;
+}
+
+.grid2{
+  display: grid;
+  justify-content: center;
+  
+  grid-template-columns:repeat(5,1fr);
+  grid-template-rows:150px auto;
+  grid-template-areas:
+  
+  "about about about quicklinks1 quicklinks1 "
+  "about about about  quicklinks1 quicklinks1 "
+  "about about about quicklinks2 quicklinks2"
+  "about about about  quicklinks2 quicklinks2 "
+  "about about about  quicklinks2 quicklinks2 "
+  "footer footer footer footer footer ";
+  gap: 20px;
+ 
+}
+
+.about{
+  grid-area: about;
+  padding: 10px;
+
+}
+.quicklinks1{
+  grid-area: quicklinks2;
+  padding: 10px;
+
+}
+.quicklinks2{
+  grid-area: quicklinks1;
+  padding: 10px;
+  
+}
+.footer{
+  grid-area:footer;
+  height: 100px;
+  
+}
+
+.grid2 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
